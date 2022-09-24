@@ -11,11 +11,11 @@ import javax.validation.constraints.Positive;
        @NotBlank(message = "El nombre del vendedor está vacio.")
        @NotNull(message = "El nombre del vendedor es nulo.")
        private String nombre;
-       @NotNull(message =" El domicilio de vendedor está vacio.")
-       @Positive(message = " El domicilio de vendedor es nulo")
+       @NotBlank(message =" El domicilio de vendedor está vacio.")
+       @NotNull(message = " El domicilio de vendedor es nulo")
        private String domicilio;
-       @NotNull(message =" El telefono de vendedor está vacio.")
-       @Positive(message = " El telefono de vendedor es nulo")
+       @NotBlank(message =" El telefono de vendedor está vacio.")
+       @NotNull(message = " El telefono de vendedor es nulo")
        private int telefono;
 
 
