@@ -8,7 +8,7 @@ public class VendedorController {
 
 
     @RestController
-    public class SellerController {
+    public class VendedorController {
 
         @PostMapping("/api/vendedores")
         public void aniadirVendedor(@Valid @RequestBody VendedorInput vendedor) {
