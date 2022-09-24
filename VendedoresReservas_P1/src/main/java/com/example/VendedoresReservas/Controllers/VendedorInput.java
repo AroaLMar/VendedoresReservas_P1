@@ -10,15 +10,15 @@ public class VendedorInput {
     //ATRIBUTOS
     @NotBlank(message = "El codigo de vendedor está vacio.")
     @NotNull(message = "El codigo de vendedor es nulo.")
-    private String codcli;
+    private String codven;
     @NotBlank(message = "El nombre del vendedor está vacio.")
     @NotNull(message = "El nombre del vendedor es nulo.")
     private String nombre;
-    @NotNull(message =" El domicilio de vendedor está vacio.")
-    @Positive(message = " El domicilio de vendedor es nulo")
+    @NotBlank(message =" El domicilio de vendedor está vacio.")
+    @NotNull(message = " El domicilio de vendedor es nulo")
     private String domicilio;
-    @NotNull(message =" El telefono de vendedor está vacio.")
-    @Positive(message = " El telefono de vendedor es nulo")
+    @NotBlank(message =" El telefono de vendedor está vacio.")
+    @NotNull(message = " El telefono de vendedor es nulo")
     private int telefono;
 
 
@@ -27,8 +27,8 @@ public class VendedorInput {
     public VendedorInput() {
     }
 
-    public VendedorInput(String codcli, String nombre, String domicilio, int telefono) {
-        this.codcli = codcli;
+    public VendedorInput(String codven, String nombre, String domicilio, int telefono) {
+        this.codven = codven;
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.telefono = telefono;
@@ -36,12 +36,12 @@ public class VendedorInput {
 
     //GETTERS Y SETTERS
 
-    public String getCodcli() {
-        return codcli;
+    public String getCodven() {
+        return codven;
     }
 
-    public void setCodcli(String codcli) {
-        this.codcli = codcli;
+    public void setCodven(String codven) {
+        this.codven = codven;
     }
 
     public String getNombre() {
@@ -73,7 +73,7 @@ public class VendedorInput {
     @Override
     public String toString() {
         return "VendedorInput{" +
-                "codcli='" + codcli + '\'' +
+                "codven='" + codven + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", domicilio='" + domicilio + '\'' +
                 ", telefono=" + telefono +
