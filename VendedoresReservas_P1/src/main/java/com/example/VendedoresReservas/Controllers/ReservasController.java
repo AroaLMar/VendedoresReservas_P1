@@ -16,7 +16,7 @@ public class ReservasController {
     }
 
     @DeleteMapping("/api/reservas/clientes/{codcli}/coches/{matricula}")
-    public void deleteBookCar(@PathVariable String codcli, @PathVariable String matricula) {
+    public void deleteReserva(@PathVariable String codcli, @PathVariable String matricula) {
         System.out.println("El cliente: " + codcli + " ha cancelado la reserva del coche con matricula: " + matricula);
     }
 }
